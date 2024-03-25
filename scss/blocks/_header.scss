@@ -7,6 +7,7 @@
     &__nav {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__nav-logo {
@@ -14,6 +15,9 @@
         transition: all .2s ease-out;
         &:hover{
             scale: 1.1;
+        }
+        img{
+            width: 100%;
         }
     }
 
@@ -45,10 +49,10 @@
     }
 
     &__white-line {
-        max-width: 430px;
+        width: 430px;
         background-color: #fff;
         height: 2px;
-        margin-top: 140px;
+        margin-top: 130px;
     }
 
     &__inner-buttons {
