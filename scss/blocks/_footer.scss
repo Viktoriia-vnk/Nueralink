@@ -1,0 +1,102 @@
+.footer {
+
+    height: 206px;
+    padding: 60px 0 0 0 ;
+
+    &__logo {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        
+    }
+    &__logo-img{
+         transition: all .2s ease-out;
+        &:hover{
+            scale: 1.1;
+        }
+    }
+
+    &__rights {
+        color: #858585;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 150px;
+        text-transform: uppercase;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 500px
+    }
+
+    &__list-item {
+        @extend %nav-link;
+        color: #858585;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        // background-color: aquamarine;
+        justify-content: space-between;
+    }
+
+    &__input{
+        width: 300px;
+        height: 20px;
+        &:focus{
+            + label{
+                top: -12px;
+                left: -1px;
+                font-size: 11px;
+            }
+        }
+        border: solid 1px gray;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    &__input-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        path{
+            fill: grey;
+        }
+    }
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    color: #858585;
+    line-height: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.footer-link {
+    color: #858585;
+    line-height: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.form {
+    position: relative;
+    &__label{
+        max-width: 190px;
+        font-size: 14px;
+        color: #BBBFBF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .2s ease-out;
+    }
+}
