@@ -155,10 +155,10 @@ body {
 .future {
   background-image: url(../images/yellow-fon.jpg);
   background-repeat: no-repeat;
-  background-position: 0 0;
   background-size: cover;
-  height: 100vh;
+  height: 650px;
   padding: 60px 0 60px 0;
+  overflow: hidden;
 }
 .future__inner {
   max-width: 430px;
@@ -185,10 +185,10 @@ body {
 }
 
 .future-container {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .footer {
@@ -291,6 +291,10 @@ body {
   .cards {
     flex-direction: column;
   }
+  .future {
+    background-size: 150%;
+    background-position: -200px 0px;
+  }
 }
 @media (max-width: 1023.98px) {
   .header {
@@ -299,10 +303,8 @@ body {
     background-position: -117px 60px;
   }
   .future {
-    background-position: clamp(-31.25rem, -40.179rem + 44.64vw, 0rem) 0;
-  }
-  .future__line {
-    max-width: 400px;
+    background-size: 190%;
+    background-position: -400px 0px;
   }
 }
 @media (max-width: 767.98px) {
@@ -350,6 +352,10 @@ body {
   }
   .footer-container .footer__nav-list {
     text-align: center;
+  }
+  .future {
+    background-size: 400%;
+    background-position: -800px 0px;
   }
 }
 @media (max-width: 599.98px) {
@@ -432,6 +438,10 @@ body {
     width: -moz-max-content;
     width: max-content;
   }
+  .future {
+    background-size: 400%;
+    background-position: -600px 0px;
+  }
 }
 @media (max-width: 374.98px) {
   .header {
@@ -451,5 +461,9 @@ body {
   }
   .future__line {
     max-width: 190px;
+  }
+  .future {
+    background-size: 500%;
+    background-position: -700px 0px;
   }
 }/*# sourceMappingURL=main.css.map */

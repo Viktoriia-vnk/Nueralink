@@ -6,55 +6,55 @@
         background-repeat: no-repeat;
         background-position: -80px 20px;
     }
-      .cards {
+    .cards {
         flex-direction: column;
+    }
+    .future{
+    background-size: 150%;
+    background-position: -200px 0px;
     }
 }
 
 @media (max-width: 1023.98px){
     .header{
-    background-size: 160% ;
-    background-repeat: no-repeat;
-    background-position: -117px 60px;
+        background-size: 160% ;
+        background-repeat: no-repeat;
+        background-position: -117px 60px;
     }
-    .future{
-    // background-position: -480px 0;
-    background-position: clamp(-31.25rem, -40.179rem + 44.64vw, 0rem) 0;
-    &__line{
-        max-width: 400px;
+      .future{
+    background-size: 190%;
+    background-position: -400px 0px;
     }
-}
-
 }
 
 @media (max-width: 767.98px) {
    .header{
-    background-size: 200%;
-    background-position: -145px 120px;
-     &__title{
-        max-width: 320px;
-        line-height: 55px;
-        font-size: 45px;
-    }
-    &__inner-buttons{
-        flex-direction: column;
-        gap: 30px;
-    }
-    &__button{
-        width: max-content;
-    }
-
+        background-size: 200%;
+        background-position: -145px 120px;
+        &__title{
+            max-width: 320px;
+            line-height: 55px;
+            font-size: 45px;
+        }
+        &__inner-buttons{
+            flex-direction: column;
+            gap: 30px;
+        }
+        &__button{
+            width: max-content;
+        }
    }
    .header__white-line{
-    width: clamp(13.75rem, 4.375rem + 46.88vw, 26.875rem);
+        width: clamp(13.75rem, 4.375rem + 46.88vw, 26.875rem);
    }
    .future{
-      &__line{
+        &__line{
         max-width: 220px;
-    }
+        }
+
    }
    .footer-container {
-    padding: 0 0 40px 0;
+        padding: 0 0 40px 0;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -74,8 +74,11 @@
       .footer__nav-list{
         text-align: center;
       }
-
    }
+    .future{
+        background-size: 400%;
+        background-position: -800px 0px;
+    }
 }
 
 @media (max-width: 599.98px) {
@@ -89,9 +92,9 @@
             min-width: 100px;
         }
     }
-  .future__text{
+    .future__text{
         max-width: 240px;
-  }
+    }
   .footer{
     &__input{
         width: 200px;
@@ -108,7 +111,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         max-width: 300px;
-
         li {
             text-align: start;
             padding-left: 15px;
@@ -137,9 +139,9 @@
        height: 370px;
    }
    .future__title{
-    font-size: 31px;
-    max-width: 200px;
-    line-height: 38px;
+        font-size: 31px;
+        max-width: 200px;
+        line-height: 38px;
    }
    .footer__nav-list {
     li{
@@ -147,28 +149,29 @@
     }
    }
    .footer__inner{
-    // padding-left: 20px;
-    // height: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    
-   }
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
    .footer__nav{
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-   }
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
    .footer__nav-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
    }
    .footer-container{
-    gap: 20px;
+        gap: 20px;
    }
    .footer-info{
-    width: max-content;
+        width: max-content;
+   }
+   .future {
+       background-size: 400%;
+       background-position: -600px 0px;
    }
 }
 
@@ -181,16 +184,21 @@
         line-height: 48px;
         font-size: 38px;
         }
-   }
+    }
    .card__img-wrapper {
        height: 300px;
-   }
+    }
     .future__text{
         max-width: 220px;
-  }
+    }
    .future{
       &__line{
         max-width: 190px;
     }
    }
+   .future {
+       background-size: 500%;
+       background-position: -700px 0px;
+   }
+   
 }
